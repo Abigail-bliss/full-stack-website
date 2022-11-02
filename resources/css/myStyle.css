@@ -1,0 +1,238 @@
+@font-face {
+    font-family: sequel;
+    src: url(../fonts/sequel/Sequel100Black-45.ttf);
+}
+
+@font-face {
+    font-family: gemunu;
+    src: url(../fonts/Gemunu_Libre/GemunuLibre-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: silkscreen;
+    src: url(../fonts/Silkscreen/Silkscreen-Regular.ttf);
+}
+
+* {
+    font-family: sequel;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: silkscreen;
+}
+
+h1 {
+    align-self: center;
+}
+
+body {
+    background-color: #C9CBA3;
+    margin: 0;
+}   
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #9899A6;
+    width: 100%;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+}
+
+.links a {
+    margin: 1rem;
+    padding: .75rem;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: #6d7092;
+    border: 4px solid #C9CBA3;
+    border-radius: 1rem;
+}
+
+.links a:hover {
+    background-color: #C9CBA3;
+    border: 4px solid #595b79;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin: 8rem 0;
+}
+
+.name {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.main img {
+    width: 50vw;
+    align-self: center;
+}
+
+.profile_photo{
+    border-radius: 2rem;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.columns div {
+    background-color: #9899A6;
+    width: 30vw;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+
+.columns p, h2 {
+    padding: 0 1rem;
+}
+
+.columns h2 {
+    text-align: center;
+}
+
+p strong {
+    color: #b73420;
+}
+
+p em {
+    color: #31378a;
+}
+
+/* ------------------------------------ Contacts page ------------------------------------ */
+
+table {
+    width: 50vw;
+    margin: 1rem;
+}
+
+table {
+    font-size: .75rem;
+    background-color: #5b5f18;
+}
+
+th, td {
+    padding: 8px; 
+}
+
+tr:nth-child(odd) {
+    background-color: #9899A6;
+}
+
+tr:nth-child(even) {
+    background-color: #bbbccc;
+}
+
+.contacts_columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+contacts-columns div {
+    width: 100%;
+}
+
+.photo img {
+    width: 30vw;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+table a {
+    color: #494d0a;
+}
+
+.thumbnail {
+    display: flex;
+    flex-direction: row;
+}
+
+.thumbnail img {
+    display: none;
+    width: 5rem;
+}
+
+.thumbnail div {
+    padding: 1rem;
+}
+
+tr:hover .thumbnail img{
+    display: flex;
+}
+
+
+/* ------------------ Widgets Page ------------------------------ */
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    margin: 1rem;
+}
+
+.rows div {
+    margin: 1rem 1rem;
+}
+
+/* ----------------------------------- lets get in touch page ---------------------------------- */
+
+.form {
+    background-color: #9899A6;
+    width: 50vw;
+    height: fit-content;
+    margin: 1rem;
+    border-radius: 2rem;
+    align-self: center;
+}
+
+form {
+    margin: 2rem;
+}
+
+form h1 {
+    text-align: center;
+}
+
+form h3{
+    margin-top: 0;
+}
+
+form div {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#warning {
+    background-color: indianred;
+    border-radius: 2rem;
+    margin: .5rem;
+    padding: .5rem;
+    text-align: center;
+}
+.hide {
+    display: none;
+}

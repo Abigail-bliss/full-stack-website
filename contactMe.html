@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Touch With Me!</title>
+    <link rel="stylesheet" href="resources/css/myStyle.css">
+    <script defer async src="./resources/js/contactMe.js"></script>
+</head>
+<body>
+    <div class="links">
+        <a href="myContacts.html">Contact Sheet</a>
+        <br>
+        <a href="myWidgets.html">My Widgets</a>
+        <br>
+        <a href="myAboutMe.html">About Me</a>
+        <br>
+        <a href="contactMe.html">Get in Touch With Me!</a>
+    </div>
+    <div class="main">
+        <div class="form" id="test">
+            <form action="https://www-users.cselabs.umn.edu/~joh13266/contactMe.php" method="POST">
+                <h1>Lets Get In Touch!</h1>
+                <div>
+                    <label for="postTitle">Title:</label>
+                    <input type="text" name="postTitle" id="postTitle" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div>
+                    <label for="link">Link:</label>
+                    <input type="url" name="link" id="link">
+                </div>
+                <fieldset>
+                    <h3 id="category">Category:</h3>
+
+                    <input type="radio" name="category" value="question" id="question" required>
+                    <label for="question">Question</label>
+        
+                    <input type="radio" name="category" value="comment" id="comment" required>
+                    <label for="comment">Comment</label>
+            
+                    <input type="radio" name="category" value="concern" id="concern" required>
+                    <label for="concern">Concern</label>
+                </fieldset>
+                
+                <div id="warning" class="hide">
+                    <div>In order to best address your concern, please make sure to list the specific way in which I have wronged you</div>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <br>
+                    <textarea id="message" name="message" placeholder="Write you message here" rows="5" cols="30" required></textarea>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
